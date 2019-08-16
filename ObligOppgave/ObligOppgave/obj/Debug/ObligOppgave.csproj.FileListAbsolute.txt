@@ -1,0 +1,7 @@
+C:\Users\lars_\source\repos\ObligOppgave\ObligOppgave\bin\Debug\ObligOppgave.exe.config
+C:\Users\lars_\source\repos\ObligOppgave\ObligOppgave\bin\Debug\ObligOppgave.exe
+C:\Users\lars_\source\repos\ObligOppgave\ObligOppgave\bin\Debug\ObligOppgave.pdb
+C:\Users\lars_\source\repos\ObligOppgave\ObligOppgave\obj\Debug\ObligOppgave.csprojAssemblyReference.cache
+C:\Users\lars_\source\repos\ObligOppgave\ObligOppgave\obj\Debug\ObligOppgave.csproj.CoreCompileInputs.cache
+C:\Users\lars_\source\repos\ObligOppgave\ObligOppgave\obj\Debug\ObligOppgave.exe
+C:\Users\lars_\source\repos\ObligOppgave\ObligOppgave\obj\Debug\ObligOppgave.pdb
