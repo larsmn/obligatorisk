@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Sockets;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ObligOppgave
 {
@@ -13,12 +7,13 @@ namespace ObligOppgave
         public string firstName;
         public string lastName;
         public int yearBorn;
-        public string deathYear;
+        public int deathYear;
         public int id;
         public Personer father;
         public Personer mother;
 
-        public Personer(string _firstName, string _lastName, int _yearBorn, string _deathYear, int _id, Personer _father = null, Personer _mother = null)
+        public Personer(string _firstName, string _lastName, int _yearBorn, int _id, int _deathYear = default, Personer _father = null,
+            Personer _mother = null)
         {
             firstName = _firstName;
             lastName = _lastName;
@@ -36,18 +31,17 @@ namespace ObligOppgave
             Console.WriteLine("Navn: " + firstName);
             Console.WriteLine("Etternavn: " + lastName);
             Console.WriteLine("Fødselsår: " + yearBorn);
-            Console.WriteLine("Dødsår: " + deathYear);
             Console.WriteLine("Id: " + id);
             Console.WriteLine();
             if (father != null)
             {
                 Console.WriteLine("Far: " + father.firstName + " ID: " + father.id);
             }
-
             if (mother != null)
             {
                 Console.WriteLine("Mor: " + mother.firstName + " ID: " + mother.id);
             }
+            if (deathYear != default) Console.WriteLine("Dødsår: " + deathYear);
             Console.WriteLine();
         }
     }
@@ -56,4 +50,3 @@ namespace ObligOppgave
 //Det siste skal selvsagt bare ha verdi hvis personen er død.Alle feltene er frivillige.
 //For eksempel skal du kunne legge inn en person selv om du ikke vet fødselsår.
 //Om man ikke har verdi for noen av feltene, skal man likevel ikke få lov å lage et Person-objekt.
-

@@ -13,14 +13,14 @@ namespace ObligOppgave
         static void Main(string[] args)
         {
 
-            Personer kongen = new Personer(_firstName: "Harald", "N/A", 1937, "N/A", 2);
-            Personer ingrid = new Personer("Ingrid Alexandra", "N/A", 2004, "N/A", 7);
-            Personer olav = new Personer("Olav", "N/A", 1903, "1991", 1);
-            Personer mette = new Personer("Mette Marit", "Høiby", 1973, "N/A", 5);
-            Personer marius = new Personer("Marius", "Borg Høiby", 1997, "N/A", 6);
-            Personer sverre = new Personer("Sverre Magnus", "N/A", 2005, "N/A", 8);
-            Personer sonja = new Personer("Sonja", "Haraldsen", 1937, "N/A", 3);
-            Personer haakon = new Personer("Haakon Magnus", "N/A", 1973, "N/A", 4);
+            Personer kongen = new Personer(_firstName: "Harald", _lastName: "N/A", _yearBorn: 1937, _id: 2, _deathYear: 0000);
+            Personer ingrid = new Personer("Ingrid Alexandra", "N/A", 2004, 7, 0000);
+            Personer olav = new Personer("Olav", "N/A", 1903, 1, 1991);
+            Personer mette = new Personer("Mette Marit", "Høiby", 1973, 5, 0000);
+            Personer marius = new Personer("Marius", "Borg Høiby", 1997, 6, 0000);
+            Personer sverre = new Personer("Sverre Magnus", "N/A", 2005, 8, 0000);
+            Personer sonja = new Personer("Sonja", "Haraldsen", 1937, 3, 0000);
+            Personer haakon = new Personer("Haakon Magnus", "N/A", 1973, 4, 0000);
 
             sverre.father = haakon;
             sverre.mother = mette;
@@ -50,8 +50,8 @@ namespace ObligOppgave
             Console.WriteLine();
             if (answer == "HJELP")
             {
-                Console.WriteLine("Liste => lister alle personer med id, fornavn, fødselsår, dødsår og navn og id på mor og far om det finnes registrert.");
-                Console.WriteLine("Id => viser en bestemt person med mor, far og barn. Eksempel id 5");
+                Console.WriteLine("Liste => Lister alle personer med id, fornavn, fødselsår, dødsår og navn og id på mor og far om det finnes registrert.");
+                Console.WriteLine("Id => Viser en bestemt person med mor, far og barn. Eksempel id 5");
             }
             if (answer == "LISTE")
             {
@@ -89,6 +89,5 @@ namespace ObligOppgave
             Console.WriteLine("Liste");
             Console.WriteLine("Vis ID");
         }
-
     }
 }
