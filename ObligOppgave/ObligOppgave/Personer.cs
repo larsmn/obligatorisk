@@ -46,7 +46,3 @@ namespace ObligOppgave
         }
     }
 }
-//Lag klassen Person.En person skal ha fornavn, etternavn, fødselår og dødsår.
-//Det siste skal selvsagt bare ha verdi hvis personen er død.Alle feltene er frivillige.
-//For eksempel skal du kunne legge inn en person selv om du ikke vet fødselsår.
-//Om man ikke har verdi for noen av feltene, skal man likevel ikke få lov å lage et Person-objekt.
